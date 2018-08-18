@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 300;
+  color: #777;
+}
+
+:root {
+  --nav-width: 240px;
+}
+
+.App__directions {
+  margin-top: 30vh;
+  font-size: 40px;
+  text-align: center;
+  color: #888;
+}
+
+.App__nav {
+  height: 100vh;
+  width: var(--nav-width);
+  position: absolute;
+  left: calc(var(--nav-width) * -1);
+  top: 0;
+  background: teal;
+}
+
+.App__nav-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/*.App__range-slider {*/
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*display: block;*/
+  /*width: 100%;*/
+  /*padding: 40px;*/
+/*}*/
+
+/*!*Apply styling that will override basic appearance*!*/
+/*!*nb this example is Chrome only*!*/
+
+/*input[type=range] {*/
+  /*-webkit-appearance: none; !* Hides the slider so that custom slider can be made *!*/
+  /*background: transparent; !* Otherwise white in Chrome *!*/
+/*}*/
+
+/*input[type=range]::-webkit-slider-thumb {*/
+  /*-webkit-appearance: none;*/
+/*}*/
+
+/*input[type=range]:focus {*/
+  /*outline: none; !* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. *!*/
+/*}*/
+
+/*input[type=range]::-webkit-slider-thumb {*/
+  /*-webkit-appearance: none;*/
+
+  /*height: 40px;*/
+  /*width: 40px;*/
+  /*border-radius: 50%;*/
+  /*background: #fafafa;*/
+  /*cursor: pointer;*/
+  /*margin-top: -16px;*/
+  /*box-shadow: 3px 3px 10px rgba(0,0,0,0.5);*/
+/*}*/
