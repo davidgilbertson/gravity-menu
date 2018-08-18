@@ -36,20 +36,8 @@ class App extends Component {
 
     // closing
     if (this.lastMenuX > 0 && gamma < 0) {
-      let closeMenuFurther = false;
-
-      if (this.lastMenuX === 100) {
-        if (gamma < -10) {
-          closeMenuFurther = true;
-        }
-      } else {
-        closeMenuFurther = true;
-      }
-
-      if (closeMenuFurther) {
-        this.lastMenuX = Math.max(0, this.lastMenuX + (INCREMENT * gamma));
-        this.navEl.style.transform = `translateX(${this.lastMenuX}%`;
-      }
+      this.lastMenuX = Math.max(0, this.lastMenuX + (INCREMENT * gamma));
+      this.navEl.style.transform = `translateX(${this.lastMenuX}%`;
     }
   };
 
@@ -64,6 +52,11 @@ class App extends Component {
           <a className="App__nav-link" href="#">Don't</a>
           <a className="App__nav-link" href="#">Do</a>
           <a className="App__nav-link" href="#">Anything</a>
+          <p className="App__nav-link App__last-link">
+            This is just a demo of a menu opening when you tilt your phone.
+            <br />
+            It is OK to be underwhelmed.
+          </p>
         </nav>
       </div>
     );

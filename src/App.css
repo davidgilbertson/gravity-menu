@@ -19,6 +19,8 @@
 }
 
 .App__nav {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: var(--nav-width);
   position: absolute;
@@ -28,11 +30,17 @@
 }
 
 .App__nav-link {
-  display: block;
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
   padding: 20px 10px;
   font-size: 20px;
   font-weight: 300;
+}
+
+.App__last-link {
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  border-bottom: none;
 }
