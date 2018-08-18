@@ -16,8 +16,6 @@ class App extends Component {
   }
 
   handleMotion = ({ gamma }) => {
-    // this.inputEl.value = gamma;
-
     // opening
     if (this.lastMenuX < 100 && gamma > 0) {
       let openMenuFurther = false;
@@ -55,40 +53,17 @@ class App extends Component {
     }
   };
 
-  // handleSliderMove = (e) => {
-  //   this.handleMotion({
-  //     gamma: Number(e.target.value),
-  //   });
-  // };
-
-  // handleSliderStart = (e) => {
-  //   window.addEventListener('mousemove', this.handleSliderMove);
-  //
-  //   e.target.addEventListener('mouseup', (e) => {
-  //     window.removeEventListener('mousemove', this.handleSliderMove);
-  //   });
-  // };
-
   render() {
     return (
       <div className="App__wrapper">
-        {/*<input*/}
-          {/*ref={el => this.inputEl = el}*/}
-          {/*className="App__range-slider"*/}
-          {/*type="range"*/}
-          {/*min="-90"*/}
-          {/*max="90"*/}
-          {/*step="1"*/}
-          {/*onMouseDown={this.handleSliderStart}*/}
-          {/*onTouchStart={this.handleSliderStart}*/}
-          {/*/>*/}
         <p className="App__directions">
           〈〈 Tilt your phone 〉〉
          </p>
         <nav ref={el => this.navEl = el} className="App__nav">
-          <a className="App__nav-link" href="#">Cats</a>
-          <a className="App__nav-link" href="#">Dogs</a>
-          <a className="App__nav-link" href="#">Birds</a>
+          <a className="App__nav-link" href="#">We</a>
+          <a className="App__nav-link" href="#">Don't</a>
+          <a className="App__nav-link" href="#">Do</a>
+          <a className="App__nav-link" href="#">Anything</a>
         </nav>
       </div>
     );
